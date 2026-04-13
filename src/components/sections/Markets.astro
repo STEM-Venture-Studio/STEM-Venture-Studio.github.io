@@ -1,0 +1,58 @@
+---
+const markets = [
+  {
+    title: 'DEFENCE',
+    image: '/images/markets/defence.webp',
+  },
+  {
+    title: 'MEDICAL / HEALTHCARE',
+    image: '/images/markets/medical.webp',
+  },
+  {
+    title: 'CLEANTECH',
+    image: '/images/markets/cleantech.webp',
+  },
+  {
+    title: 'AUTOSPORT',
+    image: '/images/markets/autosport.webp',
+  },
+];
+---
+
+<section id="markets" class="py-20 md:py-28 bg-surface-container-lowest">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-on-surface mb-4 uppercase" style="font-family: var(--font-headline);">
+      Markets
+    </h2>
+    <div class="w-24 h-1 bg-primary-container mx-auto mb-8"></div>
+    <p class="text-on-surface/60 max-w-4xl mx-auto mb-6">
+      The team at STIM have been providing tailor made value added manufacturing solutions for technical electronic products for over 20 years. Our clients range from one-man start-ups with genius ideas, to world leading companies working with ground breaking technology.
+    </p>
+    <p class="text-lg mb-16 italic">
+      Call us today <span class="text-primary-container font-bold">(416) 636 4584</span> — we would love to hear about your project.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      {markets.map((market) => (
+        <div class="markets-card group cursor-pointer overflow-hidden rounded-[var(--radius)]">
+          <div class="h-56 overflow-hidden">
+            <img
+              alt={market.title}
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              src={market.image}
+              loading="lazy"
+            />
+          </div>
+          <h3 class="text-lg font-bold mt-4 uppercase" style="font-family: var(--font-headline);">{market.title}</h3>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  import { initStaggerReveal } from '../../scripts/animations';
+  document.addEventListener('astro:page-load', () => {
+    initStaggerReveal('#markets', '.markets-card', { stagger: 0.1 });
+  });
+</script>

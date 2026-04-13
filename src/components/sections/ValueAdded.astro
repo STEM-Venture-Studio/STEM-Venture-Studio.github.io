@@ -1,0 +1,50 @@
+---
+const services = [
+  { icon: 'biotech', label: 'Prototyping' },
+  { icon: 'fact_check', label: 'Pre-Production Trial Builds' },
+  { icon: 'memory', label: 'SMT Assembly' },
+  { icon: 'developer_board', label: 'PTH Assembly' },
+  { icon: 'workspace_premium', label: 'ISO 13485 Manufacturing' },
+  { icon: 'inventory_2', label: 'Electromechanical Assembly' },
+  { icon: 'visibility', label: 'Test & Verification' },
+  { icon: 'lightbulb', label: 'New Product Introduction (NPI)' },
+  { icon: 'draw', label: 'Design for Manufacture Support' },
+  { icon: 'link', label: 'Supply-Chain Management' },
+  { icon: 'gavel', label: 'Regulatory Compliance Support' },
+  { icon: 'autorenew', label: 'Product Lifecycle Management' },
+  { icon: 'trending_up', label: 'Product Life Extension' },
+  { icon: 'healing', label: 'Project Recovery' },
+];
+---
+
+<section id="value-added" class="py-20 md:py-28 bg-surface-container-low">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-on-surface mb-4 uppercase" style="font-family: var(--font-headline);">
+        Bringing a Value Added Service to You
+      </h2>
+      <div class="w-24 h-1 bg-primary-container mx-auto mb-6"></div>
+      <p class="text-on-surface/60 max-w-3xl mx-auto text-lg">
+        STIM provides you with a value added service which is flexible and fast, prototyping through to volume manufacture. Over 20 years knowledge harnessed in the team!
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-y-12 gap-x-6 text-center">
+      {services.map((s) => (
+        <div class="vas-item group cursor-pointer">
+          <span class="material-symbols-outlined text-5xl text-primary-container mb-4 group-hover:scale-110 transition-transform inline-block" style="transition-duration: var(--duration-normal);">
+            {s.icon}
+          </span>
+          <h5 class="text-xs font-bold uppercase tracking-tight leading-tight text-on-surface">{s.label}</h5>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  import { initStaggerReveal } from '../../scripts/animations';
+  document.addEventListener('astro:page-load', () => {
+    initStaggerReveal('#value-added', '.vas-item', { stagger: 0.05 });
+  });
+</script>

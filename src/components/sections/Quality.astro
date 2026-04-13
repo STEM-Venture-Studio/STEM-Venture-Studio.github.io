@@ -1,0 +1,55 @@
+---
+const isoLogos = [
+  { src: '/logos/iso-9001.webp', alt: 'ISO 9001:2015 Certified' },
+  { src: '/logos/iso-13485.webp', alt: 'ISO 13485:2016 Certified' },
+];
+
+const nsoLogos = [
+  { src: '/logos/ipc-member.svg', alt: 'IPC Member' },
+  { src: '/logos/smta.svg', alt: 'SMTA Member' },
+];
+---
+
+<section id="quality" class="py-20 md:py-28 bg-surface-container-low">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-on-surface mb-4 uppercase" style="font-family: var(--font-headline);">
+      ISO 13485 Quality
+    </h2>
+    <div class="w-24 h-1 bg-primary-container mx-auto mb-6"></div>
+    <p class="text-xl italic text-on-surface/70 mb-8 max-w-3xl mx-auto">
+      "A complete quality management system, benefiting all our clients"
+    </p>
+
+    <div class="max-w-3xl mx-auto space-y-6 mb-12">
+      <p class="text-on-surface/70 text-lg">
+        STIM believes that this benefit and its processes should be applied to all our products such as, consumer, defence and aerospace alike.
+      </p>
+      <p class="text-lg font-medium">
+        <a class="text-primary-container border-b border-primary-container hover:text-primary transition-colors" href="#contact">
+          Find out more
+        </a> about how a robust quality management system can support your product.
+      </p>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+      {isoLogos.map((logo) => (
+        <img
+          src={logo.src}
+          alt={logo.alt}
+          class="h-20 md:h-24 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+          style="transition-duration: var(--duration-normal);"
+          loading="lazy"
+        />
+      ))}
+      {nsoLogos.map((logo) => (
+        <img
+          src={logo.src}
+          alt={logo.alt}
+          class="h-14 md:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+          style="transition-duration: var(--duration-normal);"
+          loading="lazy"
+        />
+      ))}
+    </div>
+  </div>
+</section>

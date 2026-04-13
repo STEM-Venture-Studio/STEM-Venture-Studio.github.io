@@ -1,0 +1,58 @@
+---
+const newsItems = [
+  {
+    title: 'Reshoring Revolution: The Return of North American Manufacturing',
+    image: '/images/news/reshoring.webp',
+    link: '#',
+  },
+  {
+    title: 'Choosing The Right Electronics Manufacturer',
+    image: '/images/news/manufacturing.webp',
+    link: '#',
+  },
+  {
+    title: 'Your Fight Against Counterfeit Components — The 3 T\'s',
+    image: '/images/news/counterfeit.webp',
+    link: '#',
+  },
+];
+---
+
+<section id="latest-news" class="py-20 md:py-28 bg-surface-container-low">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-on-surface mb-4 uppercase" style="font-family: var(--font-headline);">
+        Latest News
+      </h2>
+      <div class="w-24 h-1 bg-primary-container mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {newsItems.map((item) => (
+        <div class="news-card bg-surface-container-lowest rounded-[var(--radius)] overflow-hidden shadow-sm hover:shadow-[0_8px_32px_rgba(0,71,66,0.08)] transition-shadow group">
+          <div class="h-48 bg-surface-variant overflow-hidden">
+            <img
+              alt={item.title}
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src={item.image}
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="font-bold text-lg mb-4 leading-tight" style="font-family: var(--font-headline);">{item.title}</h3>
+            <a class="text-primary-container font-bold text-sm uppercase tracking-widest hover:text-primary transition-colors" href={item.link}>
+              Read More →
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  import { initStaggerReveal } from '../../scripts/animations';
+  document.addEventListener('astro:page-load', () => {
+    initStaggerReveal('#latest-news', '.news-card', { stagger: 0.12 });
+  });
+</script>

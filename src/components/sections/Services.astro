@@ -1,0 +1,54 @@
+---
+const services = [
+  {
+    title: 'PROTOTYPING & TRIAL BUILDS',
+    description: 'High quality Canadian electronics prototyping of PCBA\'s and Box Build assemblies for product launches or testing. Build documentation support, New Product Introduction (NPI) services. Providing feedback on design and manufacturing processes. Quick turnaround electronic prototypes.',
+    accent: 'biotech',
+  },
+  {
+    title: 'MANUFACTURING',
+    description: 'Fast and flexible electronics assembly. Low to medium volume manufacture in our Toronto ISO 13485 manufacturing facility. Clients benefit from our teams strong technical knowledge and design experience, a full turnkey solution.',
+    accent: 'precision_manufacturing',
+  },
+  {
+    title: 'VALUE ADDED SERVICES',
+    description: 'Supporting your product with more than just manufacturing. Product Lifecycle Management will save you the headaches. Be it creation of Build Pack Documentation, Test Procedures, Supply Chain Management or managing Legacy Electronic designs and Obsolescence.',
+    accent: 'inventory',
+  },
+];
+---
+
+<section id="services" class="py-20 md:py-28 bg-surface-container-lowest">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-on-surface mb-4 uppercase" style="font-family: var(--font-headline);">
+      How Can STIM Help You Today?
+    </h2>
+    <div class="w-24 h-1 bg-primary-container mx-auto mb-16"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+      {services.map((service) => (
+        <div class="services-card group flex flex-col bg-surface-container-low rounded-[var(--radius)] p-8 transition-shadow hover:shadow-[0_8px_32px_rgba(0,71,66,0.08)]"
+             style="transition-duration: var(--duration-normal);">
+          <h3 class="text-xl font-bold text-primary mb-6 uppercase" style="font-family: var(--font-headline);">
+            {service.title}
+          </h3>
+          <p class="text-on-surface/70 leading-relaxed flex-1 mb-8">{service.description}</p>
+          <a
+            href="#contact"
+            class="inline-block rounded-[var(--radius)] text-white px-6 py-2.5 font-bold text-sm hover:brightness-110 transition-all"
+            style="background: linear-gradient(135deg, #006a63, #35bdb2);"
+          >
+            Find Out More
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  import { initStaggerReveal } from '../../scripts/animations';
+  document.addEventListener('astro:page-load', () => {
+    initStaggerReveal('#services', '.services-card', { stagger: 0.12 });
+  });
+</script>

@@ -1,0 +1,68 @@
+---
+const currentYear = new Date().getFullYear();
+
+const quickLinks = [
+  { href: '#', label: 'Home' },
+  { href: '#services', label: 'Services' },
+  { href: '#value-added', label: 'Value Added' },
+  { href: '#markets', label: 'Markets' },
+  { href: '#quality', label: 'Quality' },
+  { href: '#contact', label: 'Contact' },
+];
+---
+
+<footer class="bg-[#0f172a] text-slate-300 py-20">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div class="space-y-6">
+      <img src="/logos/stim-canada-rectangle.svg" alt="STIM Canada" class="h-8 w-auto brightness-0 invert" />
+      <div class="flex gap-4">
+        <a href="#" class="text-slate-400 hover:text-primary-container transition-colors" aria-label="LinkedIn" style="transition-duration: var(--duration-fast);">
+          <span class="material-symbols-outlined text-2xl">share</span>
+        </a>
+        <a href="#" class="text-slate-400 hover:text-primary-container transition-colors" aria-label="Website" style="transition-duration: var(--duration-fast);">
+          <span class="material-symbols-outlined text-2xl">public</span>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-white text-lg font-bold mb-8" style="font-family: var(--font-headline);">Quick Links</h3>
+      <ul class="space-y-4 list-none m-0 p-0">
+        {quickLinks.map(({ href, label }) => (
+          <li>
+            <a class="hover:text-primary-container transition-colors" href={href} style="transition-duration: var(--duration-fast);">
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white text-lg font-bold mb-8" style="font-family: var(--font-headline);">Address</h3>
+      <div class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-primary-container mt-0.5">location_on</span>
+        <span>85 Toro Rd., Toronto,<br/>Ontario — M3J 2A4, Canada</span>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-white text-lg font-bold mb-8" style="font-family: var(--font-headline);">Phone</h3>
+      <div class="flex items-center gap-3 text-lg font-bold">
+        <span class="material-symbols-outlined text-primary-container">call</span>
+        <a href="tel:+14166364584" class="hover:text-primary-container transition-colors">(416) 636 4584</a>
+      </div>
+      <div class="flex items-center gap-3 mt-4 text-slate-400">
+        <span class="material-symbols-outlined text-primary-container">email</span>
+        <a href="mailto:sales@stimcanada.com" class="hover:text-primary-container transition-colors text-sm">sales@stimcanada.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16 pt-8 border-t border-slate-800 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+    <p>&copy; {currentYear} STIM Canada. Industrial Excellence & Precision Engineering.</p>
+    <p class="font-bold text-primary-container tracking-tighter uppercase">
+      STIM CANADA | PRECISION. RELIABILITY. INNOVATION.
+    </p>
+  </div>
+</footer>

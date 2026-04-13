@@ -1,0 +1,34 @@
+---
+---
+
+<section
+  class="relative h-[400px] flex items-center"
+  aria-label="Testimonial"
+>
+  <div class="absolute inset-0 z-0">
+    <img
+      src="/images/sections/testimonial-bg.webp"
+      alt=""
+      class="w-full h-full object-cover parallax-bg"
+      loading="lazy"
+    />
+    <div class="absolute inset-0 bg-black/60"></div>
+  </div>
+
+  <div class="relative z-10 max-w-4xl mx-auto px-8 text-center text-white">
+    <p class="text-xl md:text-2xl font-bold mb-6 italic leading-relaxed" style="font-family: var(--font-headline);">
+      "I love working with professionals and STIM definitely fit the bill. Their ongoing support throughout my project proves invaluable. It's a pleasure working with STIM"
+    </p>
+    <div class="w-16 h-1 bg-primary-container mx-auto mb-4"></div>
+    <p class="uppercase tracking-widest text-sm font-bold text-white/80">
+      Don't just take it from us, see what our clients say about us!
+    </p>
+  </div>
+</section>
+
+<script>
+  import { initParallax } from '../../scripts/animations';
+  document.addEventListener('astro:page-load', () => {
+    initParallax('.parallax-bg', 0.15);
+  });
+</script>

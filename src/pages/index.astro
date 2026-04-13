@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/sections/Hero.astro';
+import Services from '../components/sections/Services.astro';
+import ValueAdded from '../components/sections/ValueAdded.astro';
+import Markets from '../components/sections/Markets.astro';
+import Testimonial from '../components/sections/Testimonial.astro';
+import Quality from '../components/sections/Quality.astro';
+import Values from '../components/sections/Values.astro';
+import STIMSense from '../components/sections/STIMSense.astro';
+import CTA from '../components/sections/CTA.astro';
+import News from '../components/sections/News.astro';
+import Footer from '../components/sections/Footer.astro';
+---
+
+<BaseLayout
+  title="STIM Canada | Industrial Excellence & Precision Engineering"
+  description="STIM Canada — Tier-1 Electronics Manufacturing: PCBA, Box-Build, NPI/Prototyping, and Supply Chain Solutions. ISO 9001 & ISO 13485 Certified."
+>
+  <Nav />
+  <main id="main" class="pt-16">
+    <Hero />
+    <Services />
+    <ValueAdded />
+    <Testimonial />
+    <Markets />
+    <Quality />
+    <CTA />
+    <Values />
+    <STIMSense />
+    <News />
+  </main>
+  <Footer />
+</BaseLayout>

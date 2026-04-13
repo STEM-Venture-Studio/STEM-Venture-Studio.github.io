@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="183.72"
+   height="99.133331"
+   viewBox="0 0 183.72 99.133331"
+   sodipodi:docname="IPCMemberLogo.eps"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="1"
+       id="page1"
+       width="183.72"
+       height="99.133331"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="g1"
+     inkscape:groupmode="layer"
+     inkscape:label="1">
+    <g
+       id="group-R5">
+      <text
+         id="text2"
+         xml:space="preserve"
+         transform="matrix(1.3333333,0,-1.3577594e-8,1.3577594,69.636,94.894267)"><tspan
+           id="tspan2"
+           style="font-style:oblique;font-variant:normal;font-weight:bold;font-size:14.1922px;font-family:Univers-BoldOblique;writing-mode:lr-tb;fill:#414f5c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           x="0"
+           y="0">Member</tspan></text>
+      <path
+         id="path2"
+         d="m 545.137,317.48 51.933,294.555 h 96.539 L 641.676,317.48 h -96.539"
+         style="fill:#414f5c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,99.133333)" />
+      <path
+         id="path3"
+         d="m 691.441,317.48 51.954,294.555 h 141.96 c 84.708,0 118.755,-38.875 108.086,-99.402 C 982.25,449.195 937.563,409.098 852.867,409.098 H 804.195 L 788.004,317.48 Z m 164.942,160.348 c 22.508,0 40.418,8.992 44.93,34.375 4.824,27.391 -25.575,31.063 -46.063,31.063 h -27.422 l -11.523,-65.438 h 40.078"
+         style="fill:#414f5c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,99.133333)" />
+      <path
+         id="path4"
+         d="m 1219.83,499.508 c 2.54,30.75 -13.61,48.289 -43.91,48.289 -33.94,0 -59.55,-29.07 -69.53,-85.899 -7.26,-41.355 -5.14,-80.203 43.95,-80.203 31.09,0 49.63,21.7 58.32,49.922 h 92.85 c -21.99,-76.109 -84.47,-121.949 -162.23,-121.949 -97.36,0 -145.741,59.785 -128.88,155.473 16.81,95.351 91.89,154.668 174.16,154.668 90,0 132.44,-44.61 126.91,-120.301 h -91.64"
+         style="fill:#414f5c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,99.133333)" />
+      <path
+         id="path5"
+         d="m 118.445,501.363 c 98.274,166.063 485.793,141.121 485.793,141.121 l 14.082,77.668 c -2.785,0.028 -7.324,-0.363 -10.09,-0.363 -267.8,0 -480.679,-96.473 -489.785,-218.426"
+         style="fill:#fab20b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,99.133333)" />
+      <path
+         id="path6"
+         d="m 777.828,264.883 c -45.351,-6.914 -83.535,-10.645 -136.269,-10.645 -285.219,0 -523.356,108.184 -531.813,241.617 -8.476,133.485 215.879,241.668 501.133,241.668 2.871,0 5.723,-0.039 8.574,-0.097 l 0.406,2.422 C 589.746,742.25 558.887,743.5 527.441,743.5 227.363,743.5 -8.67188,629.691 0.246094,489.352 9.16016,348.945 259.648,235.137 559.734,235.137 c 83.582,0 149.032,8.886 217.196,24.648 l 0.898,5.098"
+         style="fill:#414f5c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,99.133333)" />
+      <text
+         id="text6"
+         xml:space="preserve"
+         transform="matrix(1.3333333,0,0,1.3333333,169.91467,63.794267)"><tspan
+           id="tspan6"
+           style="font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:12.179px;font-family:Univers-Condensed;writing-mode:lr-tb;fill:#414f5c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           x="0"
+           y="0">®</tspan></text>
+    </g>
+  </g>
+</svg>
