@@ -1,0 +1,18 @@
+{
+  "name": "stim-canada-website",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "^8.0.0",
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "^6.0.2",
+    "gsap": "^3.14.2",
+    "svelte": "^5.53.10",
+    "tailwindcss": "^4.2.1"
+  }
+}
