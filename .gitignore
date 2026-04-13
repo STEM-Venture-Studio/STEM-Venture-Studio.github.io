@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.astro/
+.venv/
+
+# WSL/Windows Zone.Identifier metadata
+*:Zone.Identifier
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Source originals (kept in public/ as optimized WebP/SVG)
+content/
